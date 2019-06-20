@@ -27,8 +27,13 @@ module.exports = {
     module:{
         rules:[
             {
-                test:/\.(css|scss)$/,
-                use:["style-loader","css-loader","sass-loader"]
+                test: /\.(css|scss)$/,
+                use: ["style-loader", {
+                    loader: "css-loader",
+                    options: {
+                        modules: true
+                    }
+                }, "sass-loader"]
             },
             {
                 test:/\.(js|jsx)$/,
@@ -80,8 +85,14 @@ module.exports = {
     //路径配置
     resolve:{
         alias:{
-            "@":path.join(__dirname,"src"),
-            "components":path.join(__dirname,"src/components")
+            "@": path.join(__dirname, "src"),
+            "api": path.join(__dirname, "src/api"),
+            "common": path.join(__dirname, "src/common"),
+            "components":path.join(__dirname,"src/components"),
+            "redux": path.join(__dirname, "src/redux"),
+            "static": path.join(__dirname, "src/static"),
+            "store": path.join(__dirname, "src/store"),
+            "views": path.join(__dirname, "src/views")
         }
     }
 }

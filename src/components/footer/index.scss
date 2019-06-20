@@ -1,0 +1,29 @@
+.z_footer{
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    overflow:hidden;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0px rgba(155, 143, 143, 0.6);
+    padding:.13rem 0;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+        li {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            div {
+                font-size:.44rem;
+            }
+            h3{
+                font-size: .24rem;
+            }
+        }
+    }
+}

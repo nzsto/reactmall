@@ -3,8 +3,6 @@ import React from "react";
 //操作DOM
 import ReactDOM from "react-dom";
 import App from "./App";
-import "./common/js/flexible"
-
 
 ReactDOM.render(
     <App/>,
