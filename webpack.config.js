@@ -29,10 +29,7 @@ module.exports = {
             {
                 test: /\.(css|scss)$/,
                 use: ["style-loader", {
-                    loader: "css-loader",
-                    options: {
-                        modules: true
-                    }
+                    loader: "css-loader"
                 }, "sass-loader"]
             },
             {
@@ -42,7 +39,7 @@ module.exports = {
                     loader:"babel-loader",
                     //ES6转换ES5
                     options:{
-                        presets:["@babel/env","@babel/react"]
+                        presets: ["@babel/env", "@babel/react"]
                     }
                 }
             },
@@ -77,6 +74,7 @@ module.exports = {
             template:"index.html",
             title:"webpack-nzsto"
         }),
+
     ],
     //api代理
     devServer:{
@@ -90,6 +88,7 @@ module.exports = {
             "common": path.join(__dirname, "src/common"),
             "components":path.join(__dirname,"src/components"),
             "redux": path.join(__dirname, "src/redux"),
+            "routers": path.join(__dirname, "src/routers"),
             "static": path.join(__dirname, "src/static"),
             "store": path.join(__dirname, "src/store"),
             "views": path.join(__dirname, "src/views")

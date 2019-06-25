@@ -1,14 +1,11 @@
-import React, { Component } from 'react'
-import Header from "components/header"
-import Footer from "components/footer"
+import React, {Fragment, Component } from 'react'
+import RoutersDom from "./routers"
 export default class App extends Component {
     render() {
         return(
-            <div>
-                <Header />
-                这是内容区
-                <Footer />
-            </div>
+            <Fragment>
+                <RoutersDom/>
+            </Fragment>
         )
     }
 }

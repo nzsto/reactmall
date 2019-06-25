@@ -11,18 +11,26 @@
         display: flex;
         justify-content: space-between;
         width:100%;
-        li {
+        li{
+            width:100%;
+        }
+        a {
             width: 100%;
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            div {
-                font-size:.44rem;
+            .iconfont {
+                font-size: .44rem;
             }
-            h3{
+
+            h3 {
                 font-size: .24rem;
+            }
+
+            &.active {
+                color: #ef3131
             }
         }
     }
